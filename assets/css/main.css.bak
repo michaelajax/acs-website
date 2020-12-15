@@ -497,7 +497,7 @@ pre>code {
     padding-bottom: .5rem;
     display: none;
     position: absolute;
-    top: 6em;
+    top: 5.9em;
     left: 0;
     width: 100%;
     height: auto;

@@ -19,10 +19,12 @@ layout: compress
 
     {% include header.html %}
 
-    <div class="hero lazyload" data-bg="{{ site.url }}{{ site.baseurl }}/assets/img/{{ site.hero_img }}">
+    <div class="hero lazyload">
       <div class="hero__wrap">
-        <h1 class="hero__title">{{ site.title | escape }}</h1>
-        <p class="hero__meta">{{ site.tagline }}</p>
+		<div>
+			<h3 class="hero__meta">{{ site.tagline }}</h2>
+		</div>  
+		<div><img src="featured-image.png"></div> 
       </div>
     </div>
 
@@ -31,8 +33,10 @@ layout: compress
         <div class="container">
           <div class="post-list" itemscope="" itemtype="http://schema.org/Blog">
 
-            {% for post in site.posts %}
-              {% include card.html %}
+            {% for page in site.pages %}
+			  {% if page.tags contains 'homepage' %}
+			    {% include card.html %}
+		      {% endif %}
             {% endfor %}
 
             <!-- {% include pagination.html %} -->

@@ -174,8 +174,7 @@ a {
 }
 
 .header {
-    background-color: #fff;
-    color: #343851;
+    background-color: #EFEFEF;
     position: absolute;
     z-index: 4;
     width: 100%;
@@ -224,7 +223,7 @@ a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 3.75em;
+    height: 6em;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between
@@ -234,7 +233,7 @@ a {
     padding-bottom: .5rem;
     display: none;
     position: absolute;
-    top: 3.75em;
+    top: 6em;
     left: 0;
     width: 100%;
     height: auto;
@@ -302,7 +301,8 @@ a {
         display: -ms-flexbox;
         display: flex;
         height: 100%;
-        padding: 0
+        padding: 0;
+        background-color: #EFEFEF;
     }
     .header__link {
         position: relative;
@@ -368,7 +368,7 @@ a {
 .post-card__inner {
     display: block;
     position: relative;
-    padding: 1.875rem 1.25rem .625rem;
+    padding: 1rem 1.25rem .625rem;
     width: 100%;
     color: #838c8d;
     border-bottom: 0
@@ -433,7 +433,7 @@ a {
 @media only screen and (min-width:62em) {
     .hero {
         margin: 0 auto;
-        height: 36em
+        height: 30em
     }
 }
 
@@ -445,7 +445,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(52, 56, 81, .8)
+    background: rgba(255, 255, 255, 1)
 }
 
 .hero__wrap {
