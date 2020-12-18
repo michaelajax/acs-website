@@ -1395,7 +1395,7 @@ table th, table td {
 .hero__wrap {
     position: absolute;
     margin: auto;
-    top: 50%;
+    top: 45%;
     left: 50%;
     -webkit-transform: translate(-50%, -35%);
     transform: translate(-50%, -35%);
@@ -1404,10 +1404,11 @@ table th, table td {
     width: 100%;
     max-width: 31em;
     display: grid;  
-    grid-gap: 15px;  
-    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-gap: 15px;
     grid-template-rows: repeat(auto-fit, 150px); 
-    align-items: center;
+    align-items: end;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .centered-grid {
@@ -1420,9 +1421,11 @@ table th, table td {
 
 @media only screen and (min-width: 62em) {
     .hero__wrap {
+        top: 50%;
         max-width: 61em;
         grid-template-rows: repeat(auto-fit, 300px);
-        grid-template-columns: repeat(auto-fit, 30em);
+        grid-template-columns: repeat(auto-fit, 29em);
+        align-items: center;
     }
 }
 
