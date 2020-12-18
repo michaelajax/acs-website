@@ -4,7 +4,8 @@ layout: compress
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en-US" }}">
 
-  {% include head.html %}
+  <title>{{ page.title | default: page.subtitle }}</title>
+  {% include headdefault.html %}
 
   <body class="site">
 
@@ -20,7 +21,7 @@ layout: compress
     {% include header.html %}
 
     <div class="hero lazyload">
-      <div class="hero__wrap">
+      <div class="hero__wrap centered-grid">
 		<div>
 			<h3 class="hero__meta">{{ site.tagline }}</h2>
 		</div>  

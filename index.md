@@ -5,5 +5,5 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 layout: default
-title: Ajax Computer Services \| Serving Home and Small Business
+title: Ajax Computer Services | Serving Home and Small Business
 ---
