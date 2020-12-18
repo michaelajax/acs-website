@@ -1405,8 +1405,8 @@ table th, table td {
     max-width: 31em;
     display: grid;  
     grid-gap: 15px;  
-    grid-template-columns: repeat(auto-fit, 30em);
-    grid-template-rows: repeat(auto-fit, 100px); 
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-rows: repeat(auto-fit, 150px); 
     align-items: center;
 }
 
@@ -1422,6 +1422,7 @@ table th, table td {
     .hero__wrap {
         max-width: 61em;
         grid-template-rows: repeat(auto-fit, 300px);
+        grid-template-columns: repeat(auto-fit, 30em);
     }
 }
 
