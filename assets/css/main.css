@@ -1417,6 +1417,7 @@ table th, table td {
 
 .leftaligned-grid {
     justify-items: left;
+    align-items: center;
 }
 
 @media only screen and (min-width: 62em) {
